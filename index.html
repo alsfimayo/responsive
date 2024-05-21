@@ -5,71 +5,39 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Document</title>
       <style>
-            *{
-                  box-sizing: border-box;
+            div{
+                  height: 100px;
+                  width: 100px;
+                  background-color: green;
+                  animation-name: ali;
+                  animation-duration: 4s;
+                  animation-timing-function: ease-in;
+                  animation-delay: 2s;
+                  position: relative;
             }
-            body{
-                  margin: 0;
+            @keyframes ali {
+                  0%{
+                        background-color: greenyellow ; left: 0px; top: 0px;
+                        
+                  }
+                  25%{
+                        background-color: greenyellow ; left: 200px; top: 0px;
+                        
+                  }
+                  50%{
+                        background-color: greenyellow ; left: 200px; top:200px;
+                        
+                  }
+                  75%{
+                        background-color: blue; left: 0px; top:200px;
+                  }
+                  100%{background-color: white; left: 0px; top: 0px;}
+                  
             }
-            .header{
-                  background-color:#f1f1f1 ;
-                  padding: 20px;
-                  text-align: center;
-            }
-            .topnav{
-                  overflow: hidden;
-                  background-color: #333;
-            }
-            .topnav a{
-                  float: left;
-                  display: block;
-                  color: #f2f2f2;
-                  text-align: center;
-                  padding: 14px 16px;
-                  text-decoration: none;
-            }
-            .topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-.column{
-      width:33.33%;
-      float: left;
-      padding: 15px;
-}
-@media screen and (max-width:600px){
-      .column{
-            width: 100%;
-      }
-}
       </style>
 </head>
 <body>
-      <div class="header">
-            <h1>Header</h1>
-            <p>Resize the browser window to see the responsive effect
-
-            </p>
-
-      </div>
-      <div class="topnav">
-            <a href="#">Link</a>
-            <a href="#">Link</a>
-            <a href="#">Link</a>
-      </div>
-      <div class="row">
-            <div class="column">
-                  <h2>Column</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, eveniet minus excepturi nemo ab vitae voluptatum molestias sed dignissimos doloremque, eligendi inventore a veritatis quos nobis alias, saepe asperiores quae.</p>
-            </div>
-            <div class="column">
-                  <h2>Column</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, eveniet minus excepturi nemo ab vitae voluptatum molestias sed dignissimos doloremque, eligendi inventore a veritatis quos nobis alias, saepe asperiores quae.</p>
-            </div>
-            <div class="column">
-                  <h2>Column</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, eveniet minus excepturi nemo ab vitae voluptatum molestias sed dignissimos doloremque, eligendi inventore a veritatis quos nobis alias, saepe asperiores quae.</p>
-            </div>
-      </div>
+      <h1>Animation</h1>
+      <div></div>
 </body>
 </html>
